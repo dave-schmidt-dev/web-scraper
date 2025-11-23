@@ -4,10 +4,11 @@ This document explains **how** the NVCC Schedule Scraper works at a high level. 
 
 ## 🏗️ High-Level Design
 
-The project is split into two main phases:
+The project is split into three main phases:
 
 1. **Data Collection (Scraping)**: Getting the raw information from the internet.
 2. **Data Visualization**: Turning that raw information into something easy to read.
+3. **Schedule Optimization**: Finding the best course combinations based on your requirements.
 
 ### The "Pipeline"
 
@@ -17,7 +18,8 @@ Think of this as a factory assembly line:
 2. **Step 1 (Scraper)**: A "robot" (Selenium) goes to the website, looks up each course, and writes down the details.
 3. **Storage (CSV)**: The robot saves its notes into a spreadsheet (CSV file).
 4. **Step 2 (Visualizer)**: A "designer" (Python script) reads the spreadsheet and draws a calendar.
-5. **Output**: An interactive HTML file you can view in your browser.
+5. **Step 3 (Optimizer)**: An "advisor" (Python script) analyzes all combinations to find the best schedule.
+6. **Output**: Interactive HTML files you can view in your browser.
 
 ---
 
@@ -57,14 +59,40 @@ Think of this as a factory assembly line:
         * Place colored blocks on the grid using CSS absolute positioning (`top` and `height`).
     5. **List Online**: Append a separate list at the bottom for online classes.
 
+### 3. The Optimizer (`optimize_schedule.py`)
+
+**Goal**: Find the best course combinations that meet your requirements.
+
+* **Logic Flow**:
+    1. **Read**: Load all course sections from the CSV.
+    2. **Categorize**: Split into in-person/hybrid vs. online courses.
+    3. **Generate Combinations**: Create all possible schedules (cartesian product).
+    4. **Score Each**:
+        * +200 points: Exactly 1 in-person class (GI Bill requirement)
+        * +100 points: In-person class at Manassas (closest campus)
+        * +50/+30/+10: Other preferred campuses
+        * +5 points: Online Asynchronous vs Virtual Real-Time
+        * -500 points: Schedule conflicts (overlapping times)
+    5. **Sort**: Rank all valid schedules by score.
+    6. **Save**: Export top 20 to JSON.
+
+* **Conflict Detection**:
+  * Parse days (M, T, W, R, F, S, U) and times.
+  * Check if two classes share any days.
+  * Check if time ranges overlap.
+
 ---
 
 ## 📂 File Structure
 
 * `scrape_nvcc.py`: The worker script. Runs the browser.
 * `visualize_schedule.py`: The artist script. Draws the calendar.
-* `nvcc_spring_2026_schedule_data.csv`: The bridge. Holds data between the worker and the artist.
-* `schedule_view.html`: The final product.
+* `optimize_schedule.py`: The advisor script. Finds best schedules.
+* `generate_optimizer_html.py`: Creates interactive schedule explorer.
+* `nvcc_spring_2026_schedule_data.csv`: The bridge. Holds data between components.
+* `schedule_view.html`: Visual calendar output.
+* `schedule_optimizer.html`: Interactive schedule comparison tool.
+* `optimized_schedules.json`: Top schedule combinations.
 
 ## 🧠 Key Concepts for Beginners
 
