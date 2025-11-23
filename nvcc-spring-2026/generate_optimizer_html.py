@@ -1,19 +1,42 @@
 """
-Generate interactive HTML viewer for optimized schedules.
+Interactive HTML Generator for Optimized Schedules
+
+This script takes the JSON output from optimize_schedule.py and creates
+a beautiful, interactive HTML page where you can:
+1. View the top 20 schedules
+2. Filter by campus or course
+3. See which class is the GI Bill qualifying class
+4. Easily find Class Numbers for registration
 """
 
 import json
 
+# ==========================================
+# CONFIGURATION
+# ==========================================
 INPUT_FILE = "optimized_schedules.json"
 OUTPUT_FILE = "schedule_optimizer.html"
 
 def generate_html():
-    """Generate interactive HTML from JSON schedules."""
+    """
+    Generate the complete HTML page from the JSON schedules.
     
-    # Load schedules
+    This function:
+    1. Loads the optimized schedules from JSON
+    2. Builds an HTML page with CSS styling
+    3. Creates interactive schedule cards
+    4. Adds JavaScript for filtering
+    
+    Returns:
+        str: Complete HTML document as a string
+    """
+    
+    # Load the schedules from the JSON file created by optimize_schedule.py
     with open(INPUT_FILE, 'r') as f:
         schedules = json.load(f)
     
+    # Start building the HTML document
+    # We use triple-quoted strings to write multi-line HTML
     html = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,32 +44,35 @@ def generate_html():
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NVCC Schedule Optimizer - Spring 2026</title>
     <style>
+        /* ===== GENERAL PAGE STYLING ===== */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
+            max-width: 1200px;  /* Don't make it too wide */
+            margin: 0 auto;     /* Center the content */
             padding: 20px;
-            background-color: #f5f5f5;
+            background-color: #f5f5f5;  /* Light gray background */
         }
         
         h1 {
-            color: #2c3e50;
+            color: #2c3e50;  /* Dark blue-gray */
             text-align: center;
         }
         
+        /* ===== SUMMARY BOX (at the top) ===== */
         .summary {
             background: white;
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 8px;  /* Rounded corners */
             margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Subtle shadow */
         }
         
         .summary h2 {
             margin-top: 0;
-            color: #27ae60;
+            color: #27ae60;  /* Green for success */
         }
         
+        /* ===== FILTER CONTROLS ===== */
         .filters {
             background: white;
             padding: 15px;
@@ -70,22 +96,24 @@ def generate_html():
             border: 1px solid #ddd;
         }
         
+        /* ===== SCHEDULE CARD STYLING ===== */
         .schedule-card {
             background: white;
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            border-left: 5px solid #3498db;
+            border-left: 5px solid #3498db;  /* Blue accent bar */
         }
         
+        /* Hidden class for filtering */
         .schedule-card.hidden {
             display: none;
         }
         
         .schedule-header {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between;  /* Push title and score apart */
             align-items: center;
             margin-bottom: 15px;
             padding-bottom: 10px;
@@ -99,32 +127,35 @@ def generate_html():
         }
         
         .score-badge {
-            background: #3498db;
+            background: #3498db;  /* Blue */
             color: white;
             padding: 5px 15px;
-            border-radius: 20px;
+            border-radius: 20px;  /* Pill shape */
             font-weight: bold;
         }
         
+        /* ===== GI BILL INFO BOX ===== */
+        /* This highlights which class qualifies for GI Bill */
         .gi-bill-info {
-            background: #e8f5e9;
+            background: #e8f5e9;  /* Light green */
             padding: 10px;
             border-radius: 5px;
             margin-bottom: 15px;
-            border-left: 3px solid #27ae60;
+            border-left: 3px solid #27ae60;  /* Green accent */
         }
         
         .gi-bill-info strong {
             color: #27ae60;
         }
         
+        /* ===== TABLE STYLING ===== */
         .class-table {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: collapse;  /* No gaps between cells */
         }
         
         .class-table th {
-            background: #ecf0f1;
+            background: #ecf0f1;  /* Light gray */
             padding: 10px;
             text-align: left;
             font-weight: bold;
@@ -136,12 +167,14 @@ def generate_html():
             border-bottom: 1px solid #ecf0f1;
         }
         
+        /* Hover effect on table rows */
         .class-table tr:hover {
             background: #f8f9fa;
         }
         
+        /* Highlight the GI Bill qualifying class */
         .gi-bill-class {
-            background: #fff3cd !important;
+            background: #fff3cd !important;  /* Yellow highlight */
             font-weight: bold;
         }
         
@@ -151,6 +184,7 @@ def generate_html():
             margin-right: 5px;
         }
         
+        /* ===== DELIVERY METHOD BADGES ===== */
         .delivery-badge {
             padding: 3px 8px;
             border-radius: 3px;
@@ -158,21 +192,23 @@ def generate_html():
             font-weight: bold;
         }
         
+        /* Color-code delivery methods */
         .delivery-online {
-            background: #e3f2fd;
-            color: #1976d2;
+            background: #e3f2fd;  /* Light blue */
+            color: #1976d2;       /* Dark blue text */
         }
         
         .delivery-inperson {
-            background: #fff3e0;
-            color: #f57c00;
+            background: #fff3e0;  /* Light orange */
+            color: #f57c00;       /* Dark orange text */
         }
         
         .delivery-hybrid {
-            background: #f3e5f5;
-            color: #7b1fa2;
+            background: #f3e5f5;  /* Light purple */
+            color: #7b1fa2;       /* Dark purple text */
         }
         
+        /* ===== CAMPUS TAG ===== */
         .campus-tag {
             color: #666;
             font-size: 0.9em;
@@ -182,6 +218,7 @@ def generate_html():
 <body>
     <h1>🎓 Spring 2026 Schedule Optimizer</h1>
     
+    <!-- SUMMARY SECTION -->
     <div class="summary">
         <h2>✅ Optimization Complete</h2>
         <p><strong>Found:</strong> """ + str(len(schedules)) + """ valid schedules</p>
@@ -190,6 +227,7 @@ def generate_html():
         <p><strong>Campus Priority:</strong> Manassas &gt; Woodbridge &gt; Annandale</p>
     </div>
     
+    <!-- FILTER CONTROLS -->
     <div class="filters">
         <div class="filter-group">
             <label for="campusFilter">Filter by GI Bill Campus:</label>
@@ -216,23 +254,34 @@ def generate_html():
         </div>
     </div>
     
+    <!-- SCHEDULE CARDS CONTAINER -->
     <div id="scheduleContainer">
 """
     
-    # Generate schedule cards
-    for i, schedule in enumerate(schedules[:20], 1):  # Top 20
+    # ==========================================
+    # GENERATE SCHEDULE CARDS
+    # ==========================================
+    # Loop through the top 20 schedules and create a card for each
+    for i, schedule in enumerate(schedules[:20], 1):
+        # Find which class is the GI Bill class for data attributes
+        gi_bill_location = next(c['location'] for c in schedule['classes'] if c['is_gi_bill_class'])
+        
         html += f"""
-    <div class="schedule-card" data-campus="{next(c['location'] for c in schedule['classes'] if c['is_gi_bill_class'])}" data-course="{schedule['in_person_course']}">
+    <!-- SCHEDULE CARD {i} -->
+    <div class="schedule-card" data-campus="{gi_bill_location}" data-course="{schedule['in_person_course']}">
+        <!-- Card Header with Title and Score -->
         <div class="schedule-header">
             <div class="schedule-title">Option {i}</div>
             <div class="score-badge">Score: {schedule['score']}</div>
         </div>
         
+        <!-- GI Bill Info Box -->
         <div class="gi-bill-info">
             <strong>★ GI Bill Qualifying Class:</strong> {schedule['in_person_course']} 
-            ({next(c['location'] for c in schedule['classes'] if c['is_gi_bill_class'])})
+            ({gi_bill_location})
         </div>
         
+        <!-- Course Table -->
         <table class="class-table">
             <thead>
                 <tr>
@@ -248,11 +297,13 @@ def generate_html():
             <tbody>
 """
         
+        # Loop through each class in this schedule
         for cls in schedule['classes']:
+            # Highlight the GI Bill class
             row_class = 'gi-bill-class' if cls['is_gi_bill_class'] else ''
             marker = '★ ' if cls['is_gi_bill_class'] else ''
             
-            # Delivery badge class
+            # Determine badge color based on delivery method
             if 'Online' in cls['delivery']:
                 badge_class = 'delivery-online'
             elif 'Hybrid' in cls['delivery']:
@@ -260,6 +311,7 @@ def generate_html():
             else:
                 badge_class = 'delivery-inperson'
             
+            # Add a table row for this class
             html += f"""
                 <tr class="{row_class}">
                     <td><span class="gi-bill-marker">{marker}</span>{cls['course']}</td>
@@ -272,29 +324,48 @@ def generate_html():
                 </tr>
 """
         
+        # Close the table and card
         html += """
             </tbody>
         </table>
     </div>
 """
     
+    # ==========================================
+    # JAVASCRIPT FOR FILTERING
+    # ==========================================
+    # This code runs in the browser to hide/show cards based on filters
     html += """
     </div>
     
     <script>
+        /**
+         * Filter schedules based on dropdown selections.
+         * 
+         * This function:
+         * 1. Gets the current filter values from the dropdowns
+         * 2. Loops through all schedule cards
+         * 3. Hides cards that don't match the filters
+         * 4. Updates the count of visible schedules
+         */
         function filterSchedules() {
+            // Get current filter values
             const campusFilter = document.getElementById('campusFilter').value;
             const courseFilter = document.getElementById('courseFilter').value;
             const cards = document.querySelectorAll('.schedule-card');
             let visibleCount = 0;
             
+            // Check each card
             cards.forEach(card => {
+                // Get the card's data attributes
                 const campus = card.dataset.campus;
                 const course = card.dataset.course;
                 
+                // Check if this card matches the filters
                 const campusMatch = campusFilter === 'all' || campus === campusFilter;
                 const courseMatch = courseFilter === 'all' || course === courseFilter;
                 
+                // Show or hide the card
                 if (campusMatch && courseMatch) {
                     card.classList.remove('hidden');
                     visibleCount++;
@@ -303,6 +374,7 @@ def generate_html():
                 }
             });
             
+            // Update the count display
             document.getElementById('resultCount').textContent = visibleCount;
         }
     </script>
@@ -313,9 +385,14 @@ def generate_html():
     return html
 
 def main():
-    """Generate and save HTML."""
+    """
+    Main function: Generate the HTML and save it to a file.
+    
+    This is the entry point when you run the script.
+    """
     html = generate_html()
     
+    # Write the HTML string to a file
     with open(OUTPUT_FILE, 'w') as f:
         f.write(html)
     
