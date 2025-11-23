@@ -1,0 +1,302 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NVCC Spring 2026 Schedule</title>
+        <style>
+            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f4f4f9; }
+            h1 { text-align: center; color: #333; }
+            .container { display: flex; flex-direction: column; gap: 20px; }
+            
+            /* Calendar Grid */
+            .calendar { 
+                display: grid; 
+                grid-template-columns: 60px repeat(7, 1fr); 
+                grid-template-rows: 30px repeat(15, 60px); /* 8AM to 10PM */
+                gap: 1px; 
+                background-color: #ddd; 
+                border: 1px solid #ccc;
+                height: 800px;
+                overflow-y: auto;
+            }
+            .header { background-color: #fff; font-weight: bold; text-align: center; padding: 5px; position: sticky; top: 0; z-index: 10; }
+            .time-slot { background-color: #fff; text-align: right; padding-right: 5px; font-size: 12px; color: #666; }
+            .day-col { background-color: #fff; position: relative; }
+            
+            /* Event Block */
+            .event {
+                position: absolute;
+                width: 90%;
+                left: 5%;
+                padding: 5px;
+                border-radius: 5px;
+                font-size: 12px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+                overflow: hidden;
+                color: #333;
+                border-left: 4px solid rgba(0,0,0,0.2);
+            }
+            .event strong { display: block; font-size: 13px; margin-bottom: 2px; }
+            
+            /* Online List */
+            .online-section { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+            .online-section h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 0; }
+            .course-card { border: 1px solid #eee; padding: 10px; margin-bottom: 10px; border-radius: 5px; background-color: #fafafa; }
+            .course-card strong { color: #0056b3; font-size: 1.1em; }
+            
+            /* Legend */
+            .legend { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 10px; }
+            .legend-item { display: flex; align-items: center; gap: 5px; font-size: 14px; }
+            .color-box { width: 15px; height: 15px; border-radius: 3px; }
+        </style>
+    </head>
+    <body>
+        <h1>Spring 2026 Schedule</h1>
+        
+        <div class="legend">
+    
+            <div class="legend-item">
+                <div class="color-box" style="background-color: #FFD700"></div>
+                <span>ITD 256</span>
+            </div>
+        
+            <div class="legend-item">
+                <div class="color-box" style="background-color: #ADFF2F"></div>
+                <span>ITN 101</span>
+            </div>
+        
+            <div class="legend-item">
+                <div class="color-box" style="background-color: #00BFFF"></div>
+                <span>ITN 170</span>
+            </div>
+        
+            <div class="legend-item">
+                <div class="color-box" style="background-color: #FF69B4"></div>
+                <span>ITN 213</span>
+            </div>
+        
+            <div class="legend-item">
+                <div class="color-box" style="background-color: #FFA500"></div>
+                <span>ITN 254</span>
+            </div>
+        
+            <div class="legend-item">
+                <div class="color-box" style="background-color: #9370DB"></div>
+                <span>ITN 260</span>
+            </div>
+        
+        </div>
+        
+        <div class="container">
+            <div class="calendar">
+                <!-- Headers -->
+                <div class="header">Time</div>
+                <div class="header">Mon</div>
+                <div class="header">Tue</div>
+                <div class="header">Wed</div>
+                <div class="header">Thu</div>
+                <div class="header">Fri</div>
+                <div class="header">Sat</div>
+                <div class="header">Sun</div>
+    <div class="time-slot" style="grid-row: 2">8 AM</div><div class="day-col" style="grid-row: 2; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 2; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 2; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 2; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 2; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 2; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 2; border-top: 1px dotted #eee;"></div><div class="time-slot" style="grid-row: 3">9 AM</div><div class="day-col" style="grid-row: 3; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 3; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 3; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 3; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 3; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 3; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 3; border-top: 1px dotted #eee;"></div><div class="time-slot" style="grid-row: 4">10 AM</div><div class="day-col" style="grid-row: 4; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 4; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 4; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 4; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 4; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 4; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 4; border-top: 1px dotted #eee;"></div><div class="time-slot" style="grid-row: 5">11 AM</div><div class="day-col" style="grid-row: 5; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 5; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 5; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 5; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 5; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 5; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 5; border-top: 1px dotted #eee;"></div><div class="time-slot" style="grid-row: 6">12 PM</div><div class="day-col" style="grid-row: 6; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 6; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 6; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 6; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 6; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 6; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 6; border-top: 1px dotted #eee;"></div><div class="time-slot" style="grid-row: 7">1 PM</div><div class="day-col" style="grid-row: 7; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 7; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 7; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 7; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 7; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 7; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 7; border-top: 1px dotted #eee;"></div><div class="time-slot" style="grid-row: 8">2 PM</div><div class="day-col" style="grid-row: 8; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 8; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 8; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 8; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 8; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 8; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 8; border-top: 1px dotted #eee;"></div><div class="time-slot" style="grid-row: 9">3 PM</div><div class="day-col" style="grid-row: 9; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 9; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 9; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 9; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 9; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 9; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 9; border-top: 1px dotted #eee;"></div><div class="time-slot" style="grid-row: 10">4 PM</div><div class="day-col" style="grid-row: 10; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 10; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 10; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 10; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 10; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 10; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 10; border-top: 1px dotted #eee;"></div><div class="time-slot" style="grid-row: 11">5 PM</div><div class="day-col" style="grid-row: 11; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 11; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 11; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 11; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 11; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 11; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 11; border-top: 1px dotted #eee;"></div><div class="time-slot" style="grid-row: 12">6 PM</div><div class="day-col" style="grid-row: 12; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 12; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 12; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 12; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 12; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 12; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 12; border-top: 1px dotted #eee;"></div><div class="time-slot" style="grid-row: 13">7 PM</div><div class="day-col" style="grid-row: 13; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 13; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 13; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 13; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 13; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 13; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 13; border-top: 1px dotted #eee;"></div><div class="time-slot" style="grid-row: 14">8 PM</div><div class="day-col" style="grid-row: 14; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 14; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 14; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 14; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 14; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 14; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 14; border-top: 1px dotted #eee;"></div><div class="time-slot" style="grid-row: 15">9 PM</div><div class="day-col" style="grid-row: 15; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 15; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 15; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 15; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 15; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 15; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 15; border-top: 1px dotted #eee;"></div><div class="time-slot" style="grid-row: 16">10 PM</div><div class="day-col" style="grid-row: 16; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 16; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 16; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 16; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 16; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 16; border-top: 1px dotted #eee;"></div><div class="day-col" style="grid-row: 16; border-top: 1px dotted #eee;"></div>
+            </div>
+            
+            <div class="online-section">
+                <h2>Online / Asynchronous / TBA Courses</h2>
+    
+                <div class="course-card" style="border-left: 5px solid #ADFF2F">
+                    <strong>ITN 101</strong> - Section E60N <br>
+                    Instructor: TBA <br>
+                    Dates: 02/17/26 to 05/11/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #ADFF2F">
+                    <strong>ITN 101</strong> - Section E61W <br>
+                    Instructor: Michak, Randy, A <br>
+                    Dates: 02/17/26 to 05/11/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #ADFF2F">
+                    <strong>ITN 101</strong> - Section E70W <br>
+                    Instructor: Andrews, Darrell <br>
+                    Dates: 03/02/26 to 04/19/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #ADFF2F">
+                    <strong>ITN 101</strong> - Section E05L <br>
+                    Instructor: Mutlu, Necmi <br>
+                    Dates: 01/20/26 to 05/11/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #ADFF2F">
+                    <strong>ITN 101</strong> - Section E40M <br>
+                    Instructor: Goodwine, Venice, M <br>
+                    Dates: 01/20/26 to 03/09/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #ADFF2F">
+                    <strong>ITN 101</strong> - Section E80W <br>
+                    Instructor: Andrews, Darrell <br>
+                    Dates: 03/24/26 to 05/11/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #00BFFF">
+                    <strong>ITN 170</strong> - Section E05N <br>
+                    Instructor: McHuen, Jason, A <br>
+                    Dates: 01/20/26 to 05/11/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #00BFFF">
+                    <strong>ITN 170</strong> - Section E40N <br>
+                    Instructor: TBA <br>
+                    Dates: 01/20/26 to 03/09/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #00BFFF">
+                    <strong>ITN 170</strong> - Section E41M <br>
+                    Instructor: TBA <br>
+                    Dates: 01/20/26 to 03/09/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #00BFFF">
+                    <strong>ITN 170</strong> - Section E55M <br>
+                    Instructor: Kohy, Babur, B <br>
+                    Dates: 02/09/26 to 03/29/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #00BFFF">
+                    <strong>ITN 170</strong> - Section E56M <br>
+                    Instructor: TBA <br>
+                    Dates: 02/09/26 to 03/29/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #00BFFF">
+                    <strong>ITN 170</strong> - Section E80M <br>
+                    Instructor: Ammons, Ryan, W <br>
+                    Dates: 03/24/26 to 05/11/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #00BFFF">
+                    <strong>ITN 170</strong> - Section E81L <br>
+                    Instructor: Ammons, Ryan, W <br>
+                    Dates: 03/24/26 to 05/11/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #FF69B4">
+                    <strong>ITN 213</strong> - Section E40M <br>
+                    Instructor: Islam, Shahpar <br>
+                    Dates: 01/20/26 to 03/09/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #FFA500">
+                    <strong>ITN 254</strong> - Section E80N <br>
+                    Instructor: Islam, Shahpar <br>
+                    Dates: 03/24/26 to 05/11/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #9370DB">
+                    <strong>ITN 260</strong> - Section E40A <br>
+                    Instructor: Mutlu, Necmi <br>
+                    Dates: 01/20/26 to 03/09/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #9370DB">
+                    <strong>ITN 260</strong> - Section E55A <br>
+                    Instructor: Chen, Johnson <br>
+                    Dates: 02/09/26 to 03/29/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #9370DB">
+                    <strong>ITN 260</strong> - Section E80N <br>
+                    Instructor: Torres, Michael <br>
+                    Dates: 03/24/26 to 05/11/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #9370DB">
+                    <strong>ITN 260</strong> - Section E05A <br>
+                    Instructor: TBA <br>
+                    Dates: 01/20/26 to 05/11/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #9370DB">
+                    <strong>ITN 260</strong> - Section E56A <br>
+                    Instructor: Torres, Michael <br>
+                    Dates: 02/09/26 to 03/29/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #9370DB">
+                    <strong>ITN 260</strong> - Section E81A <br>
+                    Instructor: TBA <br>
+                    Dates: 03/24/26 to 05/11/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #9370DB">
+                    <strong>ITN 260</strong> - Section E82L <br>
+                    Instructor: Chen, Johnson <br>
+                    Dates: 03/24/26 to 05/11/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #FFD700">
+                    <strong>ITD 256</strong> - Section E05N <br>
+                    Instructor: TBA <br>
+                    Dates: 01/20/26 to 05/11/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #FFD700">
+                    <strong>ITD 256</strong> - Section E55A <br>
+                    Instructor: TBA <br>
+                    Dates: 02/09/26 to 03/29/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #FFD700">
+                    <strong>ITD 256</strong> - Section E56W <br>
+                    Instructor: TBA <br>
+                    Dates: 02/09/26 to 03/29/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #FFD700">
+                    <strong>ITD 256</strong> - Section E80L <br>
+                    Instructor: TBA <br>
+                    Dates: 03/24/26 to 05/11/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+                <div class="course-card" style="border-left: 5px solid #FFD700">
+                    <strong>ITD 256</strong> - Section E81A <br>
+                    Instructor: TBA <br>
+                    Dates: 03/24/26 to 05/11/26 <br>
+                    Mode: Online Asynchronous
+                </div>
+             
+            </div>
+        </div>
+    </body>
+    </html>
+    

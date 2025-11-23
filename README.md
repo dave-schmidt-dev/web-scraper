@@ -11,7 +11,9 @@ A tool to scrape and visualize course schedules from Northern Virginia Community
 **Features:**
 
 - Selenium-based dynamic content scraping
-- CSV data export
+- CSV data export with Class Numbers for registration
+- **GI Bill-aware schedule optimizer** (analyzes 12,474+ combinations)
+- Conflict detection and campus preference scoring
 - Interactive HTML calendar visualization
 - Heavily commented code for educational purposes
 
