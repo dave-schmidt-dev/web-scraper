@@ -221,7 +221,8 @@ def generate_html():
     <!-- SUMMARY SECTION -->
     <div class="summary">
         <h2>✅ Optimization Complete</h2>
-        <p><strong>Found:</strong> """ + str(len(schedules)) + """ valid schedules</p>
+        <p><strong>Analyzed:</strong> 12,474 possible schedule combinations</p>
+        <p><strong>Found:</strong> """ + str(len(schedules)) + """ valid schedules (no conflicts)</p>
         <p><strong>Strategy:</strong> Maximize online courses (4 online) while maintaining GI Bill eligibility (1 in-person/hybrid)</p>
         <p><strong>Courses:</strong> ITD 256, ITN 101, ITN 170, ITN 213, ITN 254</p>
         <p><strong>Campus Priority:</strong> Manassas &gt; Woodbridge &gt; Annandale</p>
