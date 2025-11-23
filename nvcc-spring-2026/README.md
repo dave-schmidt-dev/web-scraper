@@ -8,6 +8,7 @@ A Python-based toolset designed to scrape course schedule data from the Northern
 * **Data Extraction**: Parses unstructured course details (Section, Instructor, Time, Location, Delivery Method) using regular expressions.
 * **CSV Export**: Saves clean, structured data to a CSV file for analysis.
 * **Visualization**: Generates a responsive **HTML Calendar** view to easily visualize weekly class blocks and online course timelines.
+* **Schedule Optimizer**: Intelligent course selection tool that finds optimal schedule combinations based on GI Bill requirements, campus preferences, and conflict detection.
 * **Educational Code**: The source code is heavily commented to serve as a learning resource for beginners interested in web scraping and automation.
 * **Architecture Guide**: See [ARCHITECTURE.md](ARCHITECTURE.md) for a high-level explanation of how the system works.
 
@@ -65,6 +66,28 @@ python visualize_schedule.py
 ### 3. View Results
 
 Open `schedule_view.html` in your web browser to see your color-coded weekly schedule.
+
+### 4. Optimize Your Schedule (Optional)
+
+Find the best course combinations that maximize online enrollment while maintaining GI Bill BAH eligibility.
+
+```bash
+python optimize_schedule.py
+python generate_optimizer_html.py
+```
+
+*Outputs*:
+
+* `optimized_schedules.json` - Top 20 schedule combinations
+* `schedule_optimizer.html` - Interactive tool to explore options
+
+The optimizer:
+
+* Ensures at least 1 in-person/hybrid class for GI Bill requirements
+* Maximizes online courses for convenience
+* Prioritizes preferred campuses
+* Detects and avoids time conflicts
+* Displays **Class Numbers** for easy registration
 
 ## ⚠️ Disclaimer
 
