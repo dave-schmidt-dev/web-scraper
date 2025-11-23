@@ -1,0 +1,1122 @@
+[
+  {
+    "score": 320,
+    "in_person_course": "ITN 170",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "54282",
+        "section": "E60N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55641",
+        "section": "001M",
+        "instructor": "Michak, Randy, A",
+        "days_time": "MW 02:20P - 03:40P",
+        "location": "Manassas",
+        "delivery": "In-Person",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 170",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "54282",
+        "section": "E60N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55642",
+        "section": "40YM",
+        "instructor": "Kamranpour, Katayoun",
+        "days_time": "M 06:30P - 08:15P",
+        "location": "Manassas",
+        "delivery": "Hybrid",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 170",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "54282",
+        "section": "E60N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55643",
+        "section": "41YM",
+        "instructor": "Hoang, Cuong, H",
+        "days_time": "T 06:30P - 08:15P",
+        "location": "Manassas",
+        "delivery": "Hybrid",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 170",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "54366",
+        "section": "E61W",
+        "instructor": "Michak, Randy, A",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55641",
+        "section": "001M",
+        "instructor": "Michak, Randy, A",
+        "days_time": "MW 02:20P - 03:40P",
+        "location": "Manassas",
+        "delivery": "In-Person",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 170",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "54366",
+        "section": "E61W",
+        "instructor": "Michak, Randy, A",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55642",
+        "section": "40YM",
+        "instructor": "Kamranpour, Katayoun",
+        "days_time": "M 06:30P - 08:15P",
+        "location": "Manassas",
+        "delivery": "Hybrid",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 170",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "54366",
+        "section": "E61W",
+        "instructor": "Michak, Randy, A",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55643",
+        "section": "41YM",
+        "instructor": "Hoang, Cuong, H",
+        "days_time": "T 06:30P - 08:15P",
+        "location": "Manassas",
+        "delivery": "Hybrid",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 170",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "54369",
+        "section": "E70W",
+        "instructor": "Andrews, Darrell",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55641",
+        "section": "001M",
+        "instructor": "Michak, Randy, A",
+        "days_time": "MW 02:20P - 03:40P",
+        "location": "Manassas",
+        "delivery": "In-Person",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 170",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "54369",
+        "section": "E70W",
+        "instructor": "Andrews, Darrell",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55642",
+        "section": "40YM",
+        "instructor": "Kamranpour, Katayoun",
+        "days_time": "M 06:30P - 08:15P",
+        "location": "Manassas",
+        "delivery": "Hybrid",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 170",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "54369",
+        "section": "E70W",
+        "instructor": "Andrews, Darrell",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55643",
+        "section": "41YM",
+        "instructor": "Hoang, Cuong, H",
+        "days_time": "T 06:30P - 08:15P",
+        "location": "Manassas",
+        "delivery": "Hybrid",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 101",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "58483",
+        "section": "002M",
+        "instructor": "TBA",
+        "days_time": "T 06:30P - 09:25P",
+        "location": "Manassas",
+        "delivery": "In-Person",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55730",
+        "section": "E05N",
+        "instructor": "McHuen, Jason, A",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 101",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "58483",
+        "section": "002M",
+        "instructor": "TBA",
+        "days_time": "T 06:30P - 09:25P",
+        "location": "Manassas",
+        "delivery": "In-Person",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "56653",
+        "section": "E40N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 101",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "58483",
+        "section": "002M",
+        "instructor": "TBA",
+        "days_time": "T 06:30P - 09:25P",
+        "location": "Manassas",
+        "delivery": "In-Person",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55733",
+        "section": "E41M",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 101",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "58483",
+        "section": "002M",
+        "instructor": "TBA",
+        "days_time": "T 06:30P - 09:25P",
+        "location": "Manassas",
+        "delivery": "In-Person",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "59879",
+        "section": "E55M",
+        "instructor": "Kohy, Babur, B",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 101",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "58483",
+        "section": "002M",
+        "instructor": "TBA",
+        "days_time": "T 06:30P - 09:25P",
+        "location": "Manassas",
+        "delivery": "In-Person",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "78649",
+        "section": "E56M",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 101",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "58483",
+        "section": "002M",
+        "instructor": "TBA",
+        "days_time": "T 06:30P - 09:25P",
+        "location": "Manassas",
+        "delivery": "In-Person",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55731",
+        "section": "E80M",
+        "instructor": "Ammons, Ryan, W",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 101",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "58483",
+        "section": "002M",
+        "instructor": "TBA",
+        "days_time": "T 06:30P - 09:25P",
+        "location": "Manassas",
+        "delivery": "In-Person",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55732",
+        "section": "E81L",
+        "instructor": "Ammons, Ryan, W",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 170",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "55723",
+        "section": "E05L",
+        "instructor": "Mutlu, Necmi",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55641",
+        "section": "001M",
+        "instructor": "Michak, Randy, A",
+        "days_time": "MW 02:20P - 03:40P",
+        "location": "Manassas",
+        "delivery": "In-Person",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 170",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "55723",
+        "section": "E05L",
+        "instructor": "Mutlu, Necmi",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55642",
+        "section": "40YM",
+        "instructor": "Kamranpour, Katayoun",
+        "days_time": "M 06:30P - 08:15P",
+        "location": "Manassas",
+        "delivery": "Hybrid",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 170",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "55723",
+        "section": "E05L",
+        "instructor": "Mutlu, Necmi",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55643",
+        "section": "41YM",
+        "instructor": "Hoang, Cuong, H",
+        "days_time": "T 06:30P - 08:15P",
+        "location": "Manassas",
+        "delivery": "Hybrid",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  },
+  {
+    "score": 320,
+    "in_person_course": "ITN 170",
+    "classes": [
+      {
+        "course": "ITD 256",
+        "class_number": "55683",
+        "section": "E05N",
+        "instructor": "TBA",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 101",
+        "class_number": "55724",
+        "section": "E40M",
+        "instructor": "Goodwine, Venice, M",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 170",
+        "class_number": "55641",
+        "section": "001M",
+        "instructor": "Michak, Randy, A",
+        "days_time": "MW 02:20P - 03:40P",
+        "location": "Manassas",
+        "delivery": "In-Person",
+        "is_gi_bill_class": true
+      },
+      {
+        "course": "ITN 213",
+        "class_number": "55734",
+        "section": "E40M",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      },
+      {
+        "course": "ITN 254",
+        "class_number": "55736",
+        "section": "E80N",
+        "instructor": "Islam, Shahpar",
+        "days_time": "Instructor: -",
+        "location": "NOVA Online",
+        "delivery": "Online Asynchronous",
+        "is_gi_bill_class": false
+      }
+    ]
+  }
+]

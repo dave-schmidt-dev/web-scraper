@@ -126,6 +126,11 @@ def main():
                             
                             # Use Regular Expressions (Regex) to find specific patterns in the text.
                             
+                            # Extract Class Number (the registration identifier)
+                            # Matches "Class Nbr: | 77473"
+                            class_nbr_match = re.search(r'Class Nbr:\s*\|\s*(\d+)', text_content)
+                            class_number = class_nbr_match.group(1) if class_nbr_match else "N/A"
+                            
                             # Extract Section Number (e.g., "Section: | 001A")
                             section_match = re.search(r'Section:\s*\|\s*([A-Z0-9]+)', text_content)
                             section = section_match.group(1) if section_match else "N/A"
@@ -177,6 +182,7 @@ def main():
                             # Create a dictionary for this row of data
                             row = {
                                 "Course Code": found_course,
+                                "Class Number": class_number,
                                 "Section Number": section,
                                 "Instructor": instructor,
                                 "Days/Time": days_time,
@@ -219,7 +225,7 @@ def main():
     # ------------------------------------------
     if all_data:
         with open(OUTPUT_FILE, 'w', newline='') as f:
-            fieldnames = ["Course Code", "Section Number", "Instructor", "Days/Time", "Location", "Delivery Method", "Start Date", "End Date", "Raw Data"]
+            fieldnames = ["Course Code", "Class Number", "Section Number", "Instructor", "Days/Time", "Location", "Delivery Method", "Start Date", "End Date", "Raw Data"]
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(all_data)
